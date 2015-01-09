@@ -1,6 +1,8 @@
 *.py[cod]
 .DS_Store
-.ipynb_checkpoints
-*.ipynb
-*.jpg
-*.png
+
+# Setuptools distribution folder.
+/dist/
+
+# Python egg metadata, regenerated from source files by setuptools.
+/*.egg-info

@@ -1,0 +1,14 @@
+setup.py
+bottools/__init__.py
+bottools/ai.py
+bottools/config.py
+bottools/images.py
+bottools/models.py
+bottools/stream.py
+bottools/text.py
+pybottools.egg-info/PKG-INFO
+pybottools.egg-info/SOURCES.txt
+pybottools.egg-info/dependency_links.txt
+pybottools.egg-info/not-zip-safe
+pybottools.egg-info/requires.txt
+pybottools.egg-info/top_level.txt
