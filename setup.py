@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(name='botutils',
       version='0.1',
@@ -7,7 +7,7 @@ setup(name='botutils',
       author='Jim Fingal',
       author_email='jim@jimfingal.com',
       license='MIT',
-      packages=['botutils'],
+      packages=find_packages(),
       include_package_data=True,
       install_requires=[
           'Pillow',
