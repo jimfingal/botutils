@@ -1,4 +1,4 @@
-botutils
+python-bot-tools
 ========
 
-One-off scripts or utilities to help doing things with bots
+Collection of tools, scripts, and examples I find myself using a lot when I make bots.
