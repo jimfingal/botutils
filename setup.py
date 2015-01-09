@@ -13,6 +13,8 @@ setup(name='botutils',
           'Pillow',
           'nltk',
           'tweepy',
-          'requests'
+          'requests==2.4.3'
       ],
+      test_suite='nose.collector',
+      tests_require=['nose'],
       zip_safe=False)
