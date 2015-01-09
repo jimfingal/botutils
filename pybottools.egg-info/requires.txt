@@ -1,4 +1,0 @@
-Pillow
-nltk
-tweepy
-requests
