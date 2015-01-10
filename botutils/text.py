@@ -6,9 +6,9 @@ space_before_punct = re.compile(ur' (\W)', re.UNICODE)
 sent_detector = None
 
 def tokenize_sentences(text):
-    global sent_dectector
+    global sent_detector
 
-    if not sent_dectector:
+    if not sent_detector:
         import nltk
         # TODO: what if this is not installed?
         sent_detector = nltk.data.load('tokenizers/punkt/english.pickle')
