@@ -20,7 +20,10 @@ def tokenize_sentences(text):
 
 
 def remove_trailing_punctuation(text):
-    return re.sub(r'[^\w\s]','',text)
+    return re.sub(r'\W+$','', text)
+
+def remove_leading_punctuation(text):
+    return re.sub(r'^\W+','', text)
 
 def remove_space_before_punctuation(text):
     return re.sub(space_before_punct, r'\1', text)
