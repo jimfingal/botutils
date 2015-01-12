@@ -6,7 +6,6 @@ from unipath import Path
 from nltk.util import ngrams
 import logging
 
-# TODO -- boostrap NLTK
 
 def boostrap_nltk_data():
     nltk.data.path.append('./data/')
@@ -18,6 +17,8 @@ def boostrap_nltk_data():
 
 
 class MarkovChain(object):
+    """A simple MarkovChain class. Requires NLTK data to be installed."""
+
     def __init__(self, ngram_size=2, divider_token='^'):
         self.n = ngram_size
         self.transition_probabilities = defaultdict(nltk.FreqDist)
