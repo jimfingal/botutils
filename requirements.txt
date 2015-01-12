@@ -7,3 +7,4 @@ six==1.7.3
 tweepy==3.1.0
 twython==3.2.0
 wsgiref==0.1.2
+Unipath==1.0

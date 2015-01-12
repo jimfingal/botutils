@@ -2,7 +2,19 @@ import re
 from collections import defaultdict
 
 import nltk 
+from unipath import Path
 from nltk.util import ngrams
+import logging
+
+# TODO -- boostrap NLTK
+
+def boostrap_nltk_data():
+    nltk.data.path.append('./data/')
+    nltkdata_exists = Path('./data/tokenizers/punkt/english.pickle')
+
+    if not nltkdata_exists.exists():
+        logging.info("Downloading NLTK Data")
+        nltk.download('punkt', './data')
 
 
 class MarkovChain(object):
