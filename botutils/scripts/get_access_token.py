@@ -33,6 +33,8 @@ if __name__ == "__main__":
 
         sys.exit(0) 
 
+    print "CONSUMER KEY ::  %s" % consumer_key
+    print "CONSUMER SECRET ::  %s" % consumer_secret
 
     auth = oauth_login(consumer_key, consumer_secret)
     print "Access Token ::  %s" % auth.access_token

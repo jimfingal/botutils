@@ -32,7 +32,7 @@ class MarkovChain(object):
     
     def train_sentence(self, sentence):
         tokenized = self.tokenize_sentence(sentence.decode('utf-8'))
-        # Annoyting utf8 hijinx
+        # Annoying utf8 hijinx
         tokenized = map(lambda x: tuple(map(lambda y: y.encode('utf-8'), x)), tokenized)
         num_tokens = len(tokenized)
         for i, token in enumerate(tokenized):

@@ -16,5 +16,5 @@ setup(name='botutils',
           'requests==2.4.3'
       ],
       test_suite='nose.collector',
-      tests_require=['nose'],
+      tests_require=['nose', 'sure', 'unittest2'],
       zip_safe=False)
