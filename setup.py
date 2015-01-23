@@ -13,7 +13,8 @@ setup(name='botutils',
           'Pillow',
           'nltk',
           'tweepy',
-          'requests==2.4.3'
+          'requests==2.4.3',
+          'unipath'
       ],
       test_suite='nose.collector',
       tests_require=['nose', 'sure', 'unittest2'],
